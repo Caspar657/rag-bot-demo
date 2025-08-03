@@ -16,7 +16,7 @@ DOCS_PATH = "./docs"
 CHROMA_PATH = "./chroma_store"
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
-os.environ["OPENAI_API_KEY"] = api_key
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
 # -- Prompt --
 custom_prompt_template = """
